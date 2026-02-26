@@ -1,0 +1,33 @@
+css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* KaTeX math rendering constraints */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.katex {
+  font-size: 1em;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.katex-display > .katex {
+  white-space: normal;
+}
